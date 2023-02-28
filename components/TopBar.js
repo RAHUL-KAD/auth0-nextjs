@@ -19,7 +19,7 @@ export default function TopBar({ showNav, setShowNav }) {
     >
       <div className="pl-4 md:pl-16">
         <Bars3CenterLeftIcon
-          className="h-8 w-8 text-gray-700 cursor-pointer"
+          className="h-8 w-8 text-gray-700 cursor-pointer sm:invisible"
           onClick={() => setShowNav(!showNav)}
         />
       </div>
