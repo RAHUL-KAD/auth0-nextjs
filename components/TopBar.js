@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import {
   Bars3CenterLeftIcon,
+  Bars3Icon,
   PencilIcon,
   ChevronDownIcon,
   CreditCardIcon,
@@ -13,13 +14,13 @@ import Link from "next/link";
 export default function TopBar({ showNav, setShowNav }) {
   return (
     <div
-      className={`fixed w-full h-16 flex justify-between items-center transition-all duration-[400ms] ${
+      className={`fixed w-full h-16 flex justify-between items-center bg-white transition-all duration-[400ms] ${
         showNav ? "pl-56" : ""
       }`}
     >
       <div className="pl-4 md:pl-16">
-        <Bars3CenterLeftIcon
-          className="h-8 w-8 text-gray-700 cursor-pointer sm:invisible"
+        <Bars3Icon
+          className="h-8 w-8 text-gray-700 cursor-pointer opacity-30 hover:bg-gray-300 rounded hover:opacity-100 duration-500"
           onClick={() => setShowNav(!showNav)}
         />
       </div>
