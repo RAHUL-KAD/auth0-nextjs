@@ -25,7 +25,7 @@ export default function TopBar({ showNav, setShowNav }) {
 
   return (
     <div
-      className={`fixed w-full h-16 flex justify-between items-center bg-white duration-[400ms] ${
+      className={`fixed w-full h-16 flex justify-between items-center bg-white transition-all duration-[400ms] ${
         showNav ? "pl-56" : ""
       }`}
     >
