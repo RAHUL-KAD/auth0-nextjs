@@ -11,7 +11,7 @@ const SideBar = forwardRef(({ showNav }, ref) => {
       <div className="flex justify-center mt-6 mb-14">
         <picture>
           <img
-            className="w-32 h-auto"
+            className="w-20 h-20"
             src="/ferox-transparent.png"
             alt="company logo"
           />
@@ -23,8 +23,8 @@ const SideBar = forwardRef(({ showNav }, ref) => {
           <div
             className={`pl-6 py-3 mx-5 rounded text-center cursor-pointer mb-3 flex items-center transition-colors ${
               router.pathname == "/"
-                ? "bg-orange-100 text-orange-500"
-                : "text-gray-400 hover:bg-orange-100 hover:text-orange-500"
+                ? "bg-blue-100 text-gray-700"
+                : "text-gray-400 hover:bg-gray-100 hover:text-gray-600"
             }`}
           >
             <div className="mr-2">
@@ -39,8 +39,8 @@ const SideBar = forwardRef(({ showNav }, ref) => {
           <div
             className={`pl-6 py-3 mx-5 rounded text-center cursor-pointer mb-3 flex items-center transition-colors ${
               router.pathname == "/account"
-                ? "bg-orange-100 text-orange-500"
-                : "text-gray-400 hover:bg-orange-100 hover:text-orange-500"
+                ? "bg-blue-100 text-gray-700"
+                : "text-gray-400 hover:bg-gray-100 hover:text-gray-600"
             }`}
           >
             <div className="mr-2">
@@ -55,8 +55,8 @@ const SideBar = forwardRef(({ showNav }, ref) => {
           <div
             className={`pl-6 py-3 mx-5 rounded text-center cursor-pointer mb-3 flex items-center transition-colors ${
               router.pathname == "/billing"
-                ? "bg-orange-100 text-orange-500"
-                : "text-gray-400 hover:bg-orange-100 hover:text-orange-500"
+                ? "bg-blue-100 text-gray-700"
+                : "text-gray-400 hover:bg-gray-100 hover:text-gray-600"
             }`}
           >
             <div className="mr-2">
