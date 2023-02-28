@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import {
-  Bars3CenterLeftIcon,
+  PowerIcon,
   Bars3Icon,
   PencilIcon,
   ChevronDownIcon,
@@ -63,7 +63,7 @@ export default function TopBar({ showNav, setShowNav }) {
           >
             <Menu.Items className="absolute right-0 w-56 z-50 mt-2 origin-top-right bg-white rounded shadow-sm">
               <div className="p-1">
-                <Menu.Item>
+                {/* <Menu.Item>
                   <Link
                     href="#"
                     className="flex hover:bg-orange-500 hover:text-white text-gray-700 rounded p-2 text-sm group transition-colors items-center"
@@ -80,14 +80,14 @@ export default function TopBar({ showNav, setShowNav }) {
                     <CreditCardIcon className="h-4 w-4 mr-2" />
                     Billing
                   </Link>
-                </Menu.Item>
+                </Menu.Item> */}
                 <Menu.Item>
                   <Link
-                    href="#"
-                    className="flex hover:bg-orange-500 hover:text-white text-gray-700 rounded p-2 text-sm group transition-colors items-center"
+                    href="/api/auth/logout"
+                    className="flex hover:bg-gray-100 hover:text-gray-600 text-gray-700 rounded p-2 text-sm group transition-colors items-center"
                   >
-                    <Cog8ToothIcon className="h-4 w-4 mr-2" />
-                    Settings
+                    <PowerIcon className="h-4 w-4 mr-2" />
+                    Logout
                   </Link>
                 </Menu.Item>
               </div>
